@@ -1,0 +1,131 @@
+.home-section {
+    padding-bottom: 150px;
+}
+
+.home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home__left {
+    width: 462px;
+}
+
+.home__title {
+    margin-top: 90px;
+    margin-bottom: 30px;
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 77px;
+    color: #19191B;
+}
+
+.home__subtitle {
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.btn-home {
+    margin-right: 40px;
+    padding: 20px 60px;
+    background: #5454D4;
+}
+
+.btn-home:hover {
+    background: #3939b3;
+}
+
+.home__right {
+    position: relative;
+    overflow: hidden;
+    width: 580px;
+    height: 644px;
+}
+
+.home__right>img {
+    position: absolute;
+    left: 60px;
+}
+
+.home__nav {
+    display: flex;
+}
+
+.home-nav-arrow {
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    border: 1px solid #E7E7E7;
+    border-radius: 50%;
+    transition: .5s ease;
+}
+
+.home-nav-arrow::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 24px;
+    background: url("/img/arrow-down.svg") no-repeat;
+    transform: translate(-50%, -50%);
+}
+
+.home-nav-arrow:hover {
+    border: 1.5px solid #484545;
+}
+
+@media screen and (max-width: 1070px) {
+
+    .home__left {
+        width: 400px;
+    }
+
+    .home__title {
+        font-size: 50px;
+    }
+    
+    .home__right {
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 927px) {
+
+    .home__left {
+        width: 350px;
+    }
+
+    .home__title {
+        font-size: 50px;
+    }
+    
+    .home__subtitle {
+        font-size: 20px;
+    }
+
+    .home__right {
+        margin-right: 50px;
+        width: 450px;
+        height: 500px;
+    }
+}
+@media screen and (max-width: 877px) {
+
+    .home {
+        flex-direction: column;
+        align-items: center
+    }
+
+    .home-nav-arrow::before {
+        width: 25px;
+        height: 27px;
+    }
+
+    .home__right>img {
+        top: 40px;
+    }
+}

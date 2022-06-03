@@ -1,0 +1,21 @@
+.group {
+    padding-top: 85px;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.group__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 877px) {
+
+    .group__list {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+}

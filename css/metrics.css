@@ -1,0 +1,59 @@
+.metrics {
+    padding-bottom: 140px;
+}
+
+.audits {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 150px;
+}
+
+.audit {
+    text-align: center;
+}
+
+.metric__img {
+    display: block;
+    width: 151px;
+    margin: 0 auto;
+    margin-bottom: 7px;
+}
+
+.metric__title {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    color: #19191B;
+}
+
+.metric__subtitle {
+    width: 310px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #696871;
+}
+
+@media screen and (max-width: 927px) {
+
+    .audit {
+        max-width: 250px;
+    }
+
+    .audits {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 40px 0px;
+    }
+    
+    .metric__title {
+        font-size: 20px;
+    }
+    
+    .metric__subtitle {
+        width: 250px;
+    }
+
+}
